@@ -141,6 +141,16 @@
 		"oAP": "\/index.html",
 		"oF": 0
 		},
+	"\/js\/jquery-3.2.1.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/min\/jquery-3.2.1.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/js\/main.js": {
 		"ft": 64,
 		"ma": 0,
@@ -179,6 +189,16 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"\/style\/css\/normalize.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/style\/css\/normalize-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/style\/scss\/main.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -190,6 +210,19 @@
 		"oAP": "\/style\/css\/main.css",
 		"oF": 0,
 		"oS": 0,
+		"uL": 1
+		},
+	"\/style\/scss\/normalize.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/style\/css\/normalize.css",
+		"oF": 2,
+		"oS": 3,
 		"uL": 1
 		}
 	},
