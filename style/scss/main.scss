@@ -51,6 +51,8 @@ body {
   flex-direction: column;
   justify-content: space-around;
   margin-top: 80px;
+  position: fixed;
+  right: 0;
   .player-card-active {
     padding: 8px 0;
     box-shadow: 0 2px 4px lightgrey;
@@ -63,6 +65,7 @@ body {
       width: 50px;
       height: 60px;
       display: flex;
+      padding-left: 10px;
     }
     .data-player {
       display: flex;
@@ -75,15 +78,27 @@ body {
   }
   .player-one {
     border-left: 5px solid #03a9f4;
+    position: fixed;
+    right: -150px;
+    top: 14vh;
   }
   .player-two {
     border-left: 5px solid #8bc34a;
+    position: fixed;
+    right: -150px;
+    top: 34vh;
   }
   .player-three {
     border-left: 5px solid #f44336;
+    position: fixed;
+    right: -150px;
+    top: 54vh;
   }
   .player-four {
     border-left: 5px solid #ffc107;
+    position: fixed;
+    right: -150px;
+    top: 74vh;
   }
 }
 .answer-container {
