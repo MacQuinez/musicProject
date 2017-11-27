@@ -1,4 +1,148 @@
 body {
   font-family: 'Roboto', sans-serif;
-  background: red;
-}
+  border-bottom: 10px solid #10acb4;
+  height: 99vh; }
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative; }
+
+.turntable-elements {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .turntable-elements .dificulty-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 10%; }
+    .turntable-elements .dificulty-container p {
+      width: 20%;
+      font-size: 35px; }
+    .turntable-elements .dificulty-container .turntable-mini img {
+      margin-top: -20px;
+      width: 100px;
+      height: 100px;
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+      -webkit-transform-origin: bottom left;
+              transform-origin: bottom left; }
+  .turntable-elements .turntable-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .turntable-elements .turntable-container .main-turntable {
+      position: relative; }
+      .turntable-elements .turntable-container .main-turntable .play-icon {
+        position: absolute;
+        top: 289px;
+        right: 273px; }
+    .turntable-elements .turntable-container .main-arm {
+      margin-top: 60px; }
+
+.players-container {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 80px; }
+  .players-container .player-card-active {
+    padding: 8px 0;
+    -webkit-box-shadow: 0 2px 4px lightgrey;
+            box-shadow: 0 2px 4px lightgrey;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 5px; }
+    .players-container .player-card-active img {
+      width: 50px;
+      height: 60px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    .players-container .player-card-active .data-player {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .players-container .player-card-active .data-player p {
+        margin: 10px; }
+  .players-container .player-one {
+    border-left: 5px solid #03a9f4; }
+  .players-container .player-two {
+    border-left: 5px solid #8bc34a; }
+  .players-container .player-three {
+    border-left: 5px solid #f44336; }
+  .players-container .player-four {
+    border-left: 5px solid #ffc107; }
+
+.answer-container {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.96);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .answer-container .answer-elements {
+    margin-top: 10%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%; }
+    .answer-container .answer-elements p {
+      text-align: center;
+      font-size: 46px; }
+    .answer-container .answer-elements .title {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-left: 2%; }
+      .answer-container .answer-elements .title p {
+        padding-right: 20px; }
+      .answer-container .answer-elements .title button {
+        width: 100px;
+        height: 50px;
+        border-radius: 200px;
+        border: none;
+        background: #10acb4; }
