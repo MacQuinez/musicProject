@@ -1,3 +1,3 @@
 # musicProject
 
-[https://macquinez.github.io/musicProject/](Demo)
+[Demo](https://macquinez.github.io/musicProject/)
