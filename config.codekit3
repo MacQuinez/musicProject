@@ -16,6 +16,36 @@
 		"oAP": "\/.gitignore",
 		"oF": 0
 		},
+	"\/img\/armPart1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/armPart1.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/armPart2.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/armPart2.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/armPart3.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/armPart3.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/img\/easy.png": {
 		"ft": 32768,
 		"iS": 4874,
@@ -39,7 +69,7 @@
 		},
 	"\/img\/playerfour.png": {
 		"ft": 32768,
-		"iS": 3447,
+		"iS": 2753,
 		"oA": 0,
 		"oAP": "\/img\/playerfour.png",
 		"oF": 0,
@@ -50,7 +80,7 @@
 		},
 	"\/img\/playerone.png": {
 		"ft": 32768,
-		"iS": 6101,
+		"iS": 2457,
 		"oA": 0,
 		"oAP": "\/img\/playerone.png",
 		"oF": 0,
@@ -61,9 +91,9 @@
 		},
 	"\/img\/playerthree.png": {
 		"ft": 32768,
-		"iS": 8258,
+		"iS": 3110,
 		"oA": 0,
-		"oAP": "\/img\/playerthree.png",
+		"oAP": "\/img\/.playerthree~imageoptim.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -72,7 +102,7 @@
 		},
 	"\/img\/playertwo.png": {
 		"ft": 32768,
-		"iS": 4435,
+		"iS": 2048,
 		"oA": 0,
 		"oAP": "\/img\/playertwo.png",
 		"oF": 0,
@@ -98,8 +128,8 @@
 		"oA": 0,
 		"oAP": "\/img\/rockola.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
