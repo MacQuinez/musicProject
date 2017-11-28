@@ -3,14 +3,16 @@ body {
   height: calc(100vh - 10px);
   border-bottom: 10px solid #10acb4;
 }
+
 .wrapper {
   display: flex;
   position: relative;
 }
+
 .turntable-elements {
   width: 80%;
   margin-left: 20%;
-  margin-top: 90px;
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   .dificulty-container {
@@ -19,6 +21,10 @@ body {
     p {
       width: 20%;
       font-size: 35px;
+    }
+    span {
+      color: lightgray;
+      font-weight: 300;
     }
     .turntable-mini {
       img {
@@ -32,6 +38,7 @@ body {
   }
   .turntable-container {
     display: flex;
+    cursor: pointer;
     &.active {
       .main-arm {
         img {
@@ -60,6 +67,7 @@ body {
     .main-arm {
       margin-top: 60px;
       position: relative;
+      cursor: pointer;
       img {
         transform-origin: 80px 40px;
         transition: 1s;
@@ -67,6 +75,7 @@ body {
     }
   }
 }
+
 .players-container {
   width: 20%;
   display: flex;
@@ -91,6 +100,10 @@ body {
     opacity: 0.35;
     cursor: pointer;
     transition: 0.25s;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #8ac44a;
     &:hover {
       opacity: 0.75;
       right: -150px;
@@ -110,15 +123,19 @@ body {
     }
     &.player-one {
       border-left: 10px solid #03a9f4;
+      color: #03a9f4;
     }
     &.player-two {
       border-left: 10px solid #8bc34a;
+      color: #8bc34a;
     }
     &.player-three {
       border-left: 10px solid #f44336;
+      color: #f44336;
     }
     &.player-four {
       border-left: 10px solid #ffc107;
+      color: #ffc107;
     }
     &.active {
       opacity: 1;
@@ -126,6 +143,7 @@ body {
     }
   }
 }
+
 .answer-container {
   position: absolute;
   width: 100vw;
@@ -164,6 +182,7 @@ body {
     }
   }
 }
+
 @keyframes rotate {
   from {
     transform: rotate(0deg);
@@ -172,6 +191,7 @@ body {
     transform: rotate(360deg);
   }
 }
+
 @-webkit-keyframes rotate {
   from {
     -webkit-transform: rotate(0deg);
