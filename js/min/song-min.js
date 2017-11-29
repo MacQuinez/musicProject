@@ -1,1 +1,1 @@
-$(document).ready(function(){function t(){this.title=title,this.album=album,this.year=year,this.link=link,this.startTime=startTime}});
+function Song(i,t,h,n){this.title=i,this.album=t,this.year=h,this.link=n}

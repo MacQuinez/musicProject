@@ -1,1 +1,1 @@
-$(document).ready(function(){function t(){this.playerStatus=playerStatus,this.playerPoints=playerPoints,this.keyCode=keyCode,this.avatar=avatar,this.playerName=playerName,this.songs=[],this.addPoints=function(){},this.activatePlayer=function(){},this.removePlayer=function(){}}});
+function Player(t,i,a){this.playerStatus="disabled",this.playerPoints=0,this.keyCode=a,this.avatar=i,this.playerName=t,this.addPoints=function(){},this.activatePlayer=function(){},this.removePlayer=function(){}}

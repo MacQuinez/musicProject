@@ -91,7 +91,7 @@
 		},
 	"\/img\/playerthree.png": {
 		"ft": 32768,
-		"iS": 8258,
+		"iS": 3110,
 		"oA": 0,
 		"oAP": "\/img\/.playerthree~imageoptim.png",
 		"oF": 0,
@@ -2304,7 +2304,7 @@
 		"preserveConstEnums": 0,
 		"removeComments": 0,
 		"suppressImplicitAnyIndexErrors": 0,
-		"targetECMAVersion": 0
+		"targetECMAVersion": 2
 		},
 	"languageDefaultsUserDefined": [
 		],
