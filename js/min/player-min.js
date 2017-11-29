@@ -1,0 +1,1 @@
+$(document).ready(function(){function t(){this.playerStatus=playerStatus,this.playerPoints=playerPoints,this.keyCode=keyCode,this.avatar=avatar,this.playerName=playerName,this.songs=[],this.addPoints=function(){},this.activatePlayer=function(){},this.removePlayer=function(){}}});

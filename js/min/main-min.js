@@ -1,1 +1,0 @@
-function Game(){this.players=[],this.gameStatus,this.selectedSong,this.winner,this.difficulty,this.songs=[]}$(function(){$(".turntable-container").click(function(){$(this).toggleClass("active")}),$(".player").click(function(){$(this).toggleClass("active")})});
