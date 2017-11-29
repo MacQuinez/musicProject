@@ -13,11 +13,11 @@ $(document).ready(function() {
     this.checkResponse = function() {};
     this.selectSong = function() {};
   }
+
+  $('.turntable-container').click(function() {
+    $(this).toggleClass('active');
+  });
+  $('.player').click(function() {
+    $(this).toggleClass('active');
+  });
 });
-// $(function() {
-//   $('.turntable-container').click(function() {
-//     $(this).toggleClass('active');
-//   });
-//   $('.player').click(function() {
-//     $(this).toggleClass('active');
-//   });
