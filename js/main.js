@@ -9,12 +9,12 @@ $(document).ready(function() {
     new Player(0, 'Jugador1', 'img/playerone.png', 9, '#03a9f4'),
     new Player(1, 'Jugador2', 'img/playertwo.png', 8, '#8bc34a'),
     new Player(2, 'Jugador3', 'img/playerthree.png', 16, '#f44336'),
-    new Player(3, 'Jugador4', 'img/playerfour.png', 17, '#ffc107')
+    new Player(3, 'Jugador4', 'img/playerfour.png', 18, '#ffc107')
   ];
   //Declaro las canciones pasando los parámetros que declaré en song.js
 
   var songs = [
-    new Song('cancion1', 'album1', '1998', 'url'),
+    new Song('R U Mine', 'album1', '1998', 'songs/La_mordidita.mp3'),
     new Song('cancion1', 'album1', '1998', 'url')
   ];
 
@@ -52,8 +52,8 @@ $(document).ready(function() {
               <img src="${game.players[i].avatar}" alt="">
               <p>Título de la Canción</p>
               <div class="title">
-                  <p>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ </p>
-                  <button></button>
+                  <p></p>
+                  <button style="background: ${game.players[i].color}"></button>
               </div>
           </div>
         `);
