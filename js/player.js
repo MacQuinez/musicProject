@@ -1,12 +1,19 @@
+//1. Defino la clase PLayer con sus atributos y le paso como parámetro
+// los que vaya a utilizar
+
 function Player(id, playerName, avatar, keyCode, color) {
   this.id = id;
+  this.playerName = playerName;
+  this.avatar = avatar;
+  this.keyCode = keyCode;
+  this.color = color;
   this.playerStatus = 'disabled';
   this.playerPoints = 0;
-  this.keyCode = keyCode;
-  this.avatar = avatar;
-  this.playerName = playerName;
-  this.color = color;
 
+  //2. llamo al div con clase players-container de mi HTML y con .append
+  //le meto el elemento HTML que me va a pintar a los jugadores de forma dinámica
+  //3.El contenido HTML lo declaro con comillas francesas para poder cambiar de renglón
+  //y mezclar strings con variables
   $('.players-container').append(` 
     <div class="player player-${id}" data-id="${id}"
       style="border-color: ${this.color};color: ${this.color};">
@@ -22,6 +29,7 @@ function Player(id, playerName, avatar, keyCode, color) {
   `);
 
   this.addPoints = function() {};
+  //4. Defino la función para cambiar playerStatus y si esta enabled le añado la clase active
 
   this.toggleStatus = function() {
     if (this.playerStatus === 'disabled') {
