@@ -41,7 +41,23 @@ $(document).ready(function() {
   $(document).keydown(function(key) {
     if (game.status === 'play') {
       for (let i = 0; i < game.players.length; i++) {
-        console.log(game.players[i]);
+        if (
+          game.players[i].keyCode == key.keyCode &&
+          game.players[i].playerStatus == 'enabled'
+        ) {
+          $('.turntable-container').removeClass('active');
+          $('#answer').addClass('answer-container');
+          $('#answer').append(` 
+          <div class="answer-elements" >
+              <img src="${game.players[i].avatar}" alt="">
+              <p>Título de la Canción</p>
+              <div class="title">
+                  <p>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ </p>
+                  <button></button>
+              </div>
+          </div>
+        `);
+        }
       }
     }
   });
