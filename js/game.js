@@ -11,7 +11,7 @@ function Game(players, songs) {
     //1. Ejecuto la función toggleClass y le paso la clase active para que la ponga o la qui
     $('.turntable-container').toggleClass('active');
     this.status = 'play';
-    this.selectedSong();
+    this.selectSong();
   };
   this.selectDifficulty = function() {};
   this.checkResponse = function() {};

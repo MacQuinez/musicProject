@@ -41,7 +41,7 @@ $(document).ready(function() {
   $(document).keydown(function(key) {
     if (game.status === 'play') {
       for (let i = 0; i < game.players.length; i++) {
-        console.log(players);
+        console.log(game.players[i]);
       }
     }
   });
