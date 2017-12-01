@@ -14,8 +14,13 @@ $(document).ready(function() {
   //Declaro las canciones pasando los parámetros que declaré en song.js
 
   var _songs = [
-    new Song('R U Mine', 'album1', '1998', 'songs/La_mordidita.mp3'),
-    new Song('cancion1', 'album1', '1998', 'url')
+    new Song(
+      'R U Mine'.toUpperCase(),
+      'album1',
+      '1998',
+      'songs/La_mordidita.mp3'
+    ),
+    new Song('cancion1'.toUpperCase(), 'album1', '1998', 'url')
   ];
 
   //Instancio el juego ahora game es el juego.
@@ -55,28 +60,7 @@ $(document).ready(function() {
     }
   });
   $('.answer-btn').click(function() {
-    if ($('.answer-input').val() === game.selectedSong.title) {
-      $('#answer-ok img').attr('src', game.players[game.selectedPlayer].avatar);
-      $('#answer-ok button').css(
-        'background',
-        game.players[game.selectedPlayer].color
-      );
-      $('.response-ok').css('color', game.players[game.selectedPlayer].color);
-      $('.reponse-title').text($('.answer-input').val());
-      $('#answer').hide();
-      $('#answer-ok').show();
-      game.players[game.selectedPlayer].addPoints(50);
-    } else {
-      $('#answer-ok img').attr('src', game.players[game.selectedPlayer].avatar);
-      $('.reponse-title').text($('.answer-input').val());
-      $('#answer').hide();
-      $('#answer-error').show();
-      $('#answer-ok button').css(
-        'background',
-        game.players[game.selectedPlayer].color
-      );
-      game.players[game.selectedPlayer].addPoints(-50);
-    }
+    game.checkResponse();
   });
   $('#answer-ok button').click(function() {
     game.playSong();

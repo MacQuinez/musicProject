@@ -38,8 +38,35 @@ function Game(players, songs, rounds) {
     $('.turntable-container').toggleClass('active');
     // seguir reproduciendo el mp3
   };
-  this.selectDifficulty = function() {};
-  this.checkResponse = function() {};
+  // this.selectDifficulty = function() {};
+  this.checkResponse = function() {
+    if (
+      $('.answer-input')
+        .val()
+        .toUpperCase() === this.selectedSong.title
+    ) {
+      $('#answer-ok img').attr('src', this.players[this.selectedPlayer].avatar);
+      $('#answer-ok button').css(
+        'background',
+        this.players[this.selectedPlayer].color
+      );
+      $('.response-ok').css('color', this.players[this.selectedPlayer].color);
+      $('.reponse-title').text($('.answer-input').val());
+      $('#answer').hide();
+      $('#answer-ok').show();
+      this.players[this.selectedPlayer].addPoints(50);
+    } else {
+      $('#answer-ok img').attr('src', this.players[this.selectedPlayer].avatar);
+      $('.reponse-title').text($('.answer-input').val());
+      $('#answer').hide();
+      $('#answer-error').show();
+      $('#answer-ok button').css(
+        'background',
+        this.players[this.selectedPlayer].color
+      );
+      this.players[this.selectedPlayer].addPoints(-50);
+    }
+  };
   this.selectSong = function() {
     this.selectedSong = this.songs[
       Math.floor(Math.random() * this.songs.length)
