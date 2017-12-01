@@ -49,22 +49,12 @@ $(document).ready(function() {
           //juego ya que se almacena en Game si no lo hiciera así al estar dentro de un ciclo for
           //no podría utilizarla en otro sitio que no sea ese
           game.selectedPlayer = i;
-          $('.turntable-container').removeClass('active');
-          $('#answer img').attr(
-            'src',
-            game.players[game.selectedPlayer].avatar
-          );
-          $('#answer button').css(
-            'background',
-            game.players[game.selectedPlayer].color
-          );
-          $('#answer').addClass('answer-container');
+          game.pauseSong();
         }
       }
     }
   });
   $('.answer-btn').click(function() {
-    console.log($('.answer-input').val(), game.selectedSong.title);
     if ($('.answer-input').val() === game.selectedSong.title) {
       $('#answer-ok img').attr('src', game.players[game.selectedPlayer].avatar);
       $('#answer-ok button').css(
@@ -73,14 +63,14 @@ $(document).ready(function() {
       );
       $('.response-ok').css('color', game.players[game.selectedPlayer].color);
       $('.reponse-title').text($('.answer-input').val());
-      $('#answer').removeClass('answer-container');
-      $('#answer-ok').addClass('answer-container');
+      $('#answer').hide();
+      $('#answer-ok').show();
       game.players[game.selectedPlayer].addPoints(50);
     } else {
       $('#answer-ok img').attr('src', game.players[game.selectedPlayer].avatar);
       $('.reponse-title').text($('.answer-input').val());
-      $('#answer').removeClass('answer-container');
-      $('#answer-error').addClass('answer-container');
+      $('#answer').hide();
+      $('#answer-error').show();
       $('#answer-ok button').css(
         'background',
         game.players[game.selectedPlayer].color
@@ -89,6 +79,9 @@ $(document).ready(function() {
     }
   });
   $('#answer-ok button').click(function() {
-    $('#answer-ok').hide();
+    game.playSong();
+  });
+  $('#answer-error button').click(function() {
+    game.resumeSong();
   });
 });
