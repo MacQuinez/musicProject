@@ -39,6 +39,7 @@ $(document).ready(function() {
   //y le pido el keyCode
   $(document).keydown(function(key) {
     if (game.status === 'play') {
+      game.status = 'pause';
       for (let i = 0; i < game.players.length; i++) {
         if (
           game.players[i].keyCode == key.keyCode &&
