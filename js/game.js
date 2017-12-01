@@ -1,10 +1,13 @@
-function Game(players, songs) {
+function Game(players, songs, rounds) {
   this.players = players;
   this.status = 'ready';
   this.selectedSong;
+  this.selectedPlayer;
   this.winner;
   this.difficulty = 'easy';
   this.songs = songs;
+  this.rounds = rounds;
+  this.currentRound = 0;
 
   this.startGame = function() {
     // Dando click al elemento con la clase turntable-container hago lo siguiente:

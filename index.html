@@ -16,12 +16,13 @@
         <div class="turntable-elements">
             <div class="dificulty-container">
                 <p>
-                    <span>Seleccionar</span> Dificultad</p>
-                <div class="turntable-mini">
+                    <!-- <span>Seleccionar</span> Dificultad</p> -->
+                    <p>Round 0</p>
+                    <!-- <div class="turntable-mini">
                     <img class="armThumbnail armThumbnail-one" src="img/rockolaArm.svg" alt="">
                     <img class="armThumbnail armThumbnail-two" src="img/rockolaArm.svg" alt="">
                     <img class="armThumbnail armThumbnail-three" src="img/rockolaArm.svg" alt="">
-                </div>
+                </div> -->
             </div>
             <!--meter clase active a este elemento -->
             <div class="turntable-container">
@@ -38,34 +39,46 @@
 
         </div>
         <div id="answer" class="answer-container-inactive">
-
+            <div class="answer-elements">
+                <img src="" alt="">
+                <p>Título de la Canción</p>
+                <input class="answer-input" type="text">
+                <div class="title">
+                    <button class="answer-btn"></button>
+                </div>
+            </div>
         </div>
-        <div class="answer-ok-container answer-container " style="display:none">
+        <div id="answer-ok" class="answer-container-inactive">
             <div class="answer-elements answer-ok-elements">
                 <img src="img/playerone.png" alt="">
-                <p>+ 50 pts</p>
+                <p class="response-ok">+50</p>
                 <div class="title">
-                    <p>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ </p>
-                    <button></button>
-                </div>
-            </div>
-            <div class="answer-elements answer-ok-elements" style="display:none">
-                <img src="img/playerone.png" alt="">
-                <p>+ 50 pts</p>
-                <div class="title">
-                    <p>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ </p>
-                    <button></button>
-                </div>
-            </div>
-            <div class="answer-elements answer-ok-elements" style="display:none">
-                <img src="img/playerone.png" alt="">
-                <p>+ 50 pts</p>
-                <div class="title">
-                    <p>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ </p>
+                    <p class="reponse-title"> </p>
                     <button></button>
                 </div>
             </div>
         </div>
+        <div id="answer-error" class="answer-container-inactive">
+            <div class="answer-elements answer-ok-elements">
+                <img src="img/playerone.png" alt="">
+                <p style="color:red">INCORRECTO!!!!</p>
+                <p class="response-error">-10</p>
+                <p class="reponse-title"> </p>
+                <div class="title">
+                    <button></button>
+                </div>
+            </div>
+        </div>
+        <!-- <div id="winner" class="answer-container-inactive">
+            <div class="answer-elements answer-ok-elements">
+                <img src="img/playerone.png" alt="">
+                <p></p>
+                <div class="title">
+                    <p>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ </p>
+                    <button></button>
+                </div>
+            </div>
+        </div> -->
     </div>
     <script src="js/min/jquery-3.2.1.min.js"></script>
     <script src="js/song.js"></script>

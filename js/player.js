@@ -2,7 +2,7 @@
 // los que vaya a utilizar
 
 function Player(id, playerName, avatar, keyCode, color) {
-  this.id = id;
+  this.id = id; //le doy un ID para poder distinguir cada jugador
   this.playerName = playerName;
   this.avatar = avatar;
   this.keyCode = keyCode;
@@ -20,7 +20,7 @@ function Player(id, playerName, avatar, keyCode, color) {
         <img src="${avatar}" alt="">
         <div class="data-player">
             <p>${this.playerName}</p>
-            <p class="score">0</p>
+            <p class="score">${this.playerPoints}</p>
         </div>
         <div class="active-key">
             <img src="" alt="">
@@ -28,7 +28,11 @@ function Player(id, playerName, avatar, keyCode, color) {
     </div>
   `);
 
-  this.addPoints = function() {};
+  this.addPoints = function(num) {
+    this.playerPoints += num;
+
+    $('.player-' + this.id + ' .score').text(this.playerPoints);
+  };
   //4. Defino la función para cambiar playerStatus y si esta enabled le añado la clase active
 
   this.toggleStatus = function() {
