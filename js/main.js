@@ -25,7 +25,7 @@ $(document).ready(function() {
 
   //Instancio el juego ahora game es el juego.
 
-  var game = new Game(_players, _songs, 5);
+  var game = new Game(_players, _songs, 1);
   // Dando click al elemento con la clase player hago lo siguiente:
   // 1. Asigno a una variable el valor de su atributo data-id.
   //2.  Le paso esa variable al atributo players de la clase Game
