@@ -14,13 +14,13 @@ $(document).ready(function() {
   //Declaro las canciones pasando los parámetros que declaré en song.js
 
   var _songs = [
+    new Song('R U Mine'.toUpperCase(), 'album1', '1998', 'songs/R_U_mine.mp3'),
     new Song(
-      'R U Mine'.toUpperCase(),
+      'cancion1'.toUpperCase(),
       'album1',
       '1998',
       'songs/La_mordidita.mp3'
-    ),
-    new Song('cancion1'.toUpperCase(), 'album1', '1998', 'url')
+    )
   ];
 
   //Instancio el juego ahora game es el juego.
