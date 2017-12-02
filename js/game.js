@@ -10,9 +10,6 @@ function Game(players, songs, rounds) {
   this.currentRound = 0;
   this.finalRound = 1;
 
-  this.reset = function() {
-    Player.playerStatus = 'disabled';
-  };
   this.startGame = function() {
     // Dando click al elemento con la clase turntable-container hago lo siguiente:
     //1. Ejecuto la función toggleClass y le paso la clase active para que la ponga o la qui
