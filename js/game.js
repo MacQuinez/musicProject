@@ -27,8 +27,6 @@ function Game(players, songs, rounds) {
     this.winner();
     this.addRound();
     console.log(this.selectedSong.title);
-
-    // reproducir mp3 de this.selectedSong
     this.status = 'play';
     $('.turntable-container').toggleClass('active');
   };
@@ -40,10 +38,16 @@ function Game(players, songs, rounds) {
       'background',
       this.players[this.selectedPlayer].color
     );
+
     $('#answer-error button').css(
       'background',
       this.players[this.selectedPlayer].color
     );
+    $('#answer-error img').attr(
+      'src',
+      this.players[this.selectedPlayer].avatar
+    );
+
     $('#answer-ok button').css(
       'background',
       this.players[this.selectedPlayer].color
@@ -60,7 +64,6 @@ function Game(players, songs, rounds) {
     $('.turntable-container').toggleClass('active');
     audio.play();
   };
-  // this.selectDifficulty = function() {};
   this.checkResponse = function() {
     if (
       $('.answer-input')

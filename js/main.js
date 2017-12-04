@@ -20,7 +20,7 @@ $(document).ready(function() {
       'img/playertwo.png',
       8,
       '#8bc34a',
-      'img/jugador217.png'
+      'img/jugador28.png'
     ),
     new Player(
       2,
@@ -34,7 +34,7 @@ $(document).ready(function() {
       3,
       'Jugador 4',
       'img/playerfour.png',
-      18,
+      27,
       '#ffc107',
       'img/jugador427.png'
     )

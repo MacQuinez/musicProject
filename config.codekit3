@@ -50,7 +50,7 @@
 		},
 	"\/img\/jugador19.png": {
 		"ft": 32768,
-		"iS": 5496,
+		"iS": 9545,
 		"oA": 0,
 		"oAP": "\/img\/jugador19.png",
 		"oF": 0,
@@ -59,11 +59,11 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/img\/jugador217.png": {
+	"\/img\/jugador28.png": {
 		"ft": 32768,
-		"iS": 3829,
+		"iS": 10424,
 		"oA": 0,
-		"oAP": "\/img\/jugador217.png",
+		"oAP": "\/img\/jugador28.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -72,7 +72,7 @@
 		},
 	"\/img\/jugador316.png": {
 		"ft": 32768,
-		"iS": 3896,
+		"iS": 9794,
 		"oA": 0,
 		"oAP": "\/img\/jugador316.png",
 		"oF": 0,
