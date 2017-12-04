@@ -8,7 +8,10 @@ function Game(players, songs, rounds) {
   this.songs = songs;
   this.rounds = rounds;
   this.currentRound = 0;
-  this.finalRound = 1;
+  this.finalRound = 4;
+  this.reset;
+
+  var audio = document.getElementById('audioDemo');
 
   this.startGame = function() {
     // Dando click al elemento con la clase turntable-container hago lo siguiente:
@@ -17,7 +20,10 @@ function Game(players, songs, rounds) {
   };
   this.playSong = function() {
     $('#answer-ok').hide();
+    $('.turntable-container').css('pointer-events', 'none');
     this.selectSong();
+    audio.load();
+    audio.play();
     this.winner();
     this.addRound();
     console.log(this.selectedSong.title);
@@ -27,6 +33,7 @@ function Game(players, songs, rounds) {
     $('.turntable-container').toggleClass('active');
   };
   this.pauseSong = function() {
+    audio.pause();
     $('.turntable-container').removeClass('active');
     $('#answer img').attr('src', this.players[this.selectedPlayer].avatar);
     $('#answer button').css(
@@ -51,7 +58,7 @@ function Game(players, songs, rounds) {
     $('#answer-error').hide();
     this.status = 'play';
     $('.turntable-container').toggleClass('active');
-    // seguir reproduciendo el mp3
+    audio.play();
   };
   // this.selectDifficulty = function() {};
   this.checkResponse = function() {
@@ -87,6 +94,7 @@ function Game(players, songs, rounds) {
     this.selectedSong = this.songs[
       Math.floor(Math.random() * this.songs.length)
     ];
+    $('#sourceSong').attr('src', this.selectedSong.link);
   };
   this.addRound = function() {
     if (this.currentRound <= this.finalRound) {
@@ -99,6 +107,11 @@ function Game(players, songs, rounds) {
       $('#winner').show();
       this.status = 'pause';
       $('#winner img').attr('src', this.players[this.selectedPlayer].avatar);
+    }
+  };
+  this.reset = function() {
+    if (this.currentRound === 5) {
+      window.location.reload();
     }
   };
 }

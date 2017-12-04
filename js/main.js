@@ -6,17 +6,45 @@ $(document).ready(function() {
   //Declaro los jugadores pasando los parámetros que declaré en players.js
 
   var _players = [
-    new Player(0, 'Jugador1', 'img/playerone.png', 9, '#03a9f4'),
-    new Player(1, 'Jugador2', 'img/playertwo.png', 8, '#8bc34a'),
-    new Player(2, 'Jugador3', 'img/playerthree.png', 16, '#f44336'),
-    new Player(3, 'Jugador4', 'img/playerfour.png', 18, '#ffc107')
+    new Player(
+      0,
+      'Jugador 1',
+      'img/playerone.png',
+      9,
+      '#03a9f4',
+      'img/jugador19.png'
+    ),
+    new Player(
+      1,
+      'Jugador 2',
+      'img/playertwo.png',
+      8,
+      '#8bc34a',
+      'img/jugador217.png'
+    ),
+    new Player(
+      2,
+      'Jugador 3',
+      'img/playerthree.png',
+      16,
+      '#f44336',
+      'img/jugador316.png'
+    ),
+    new Player(
+      3,
+      'Jugador 4',
+      'img/playerfour.png',
+      18,
+      '#ffc107',
+      'img/jugador427.png'
+    )
   ];
   //Declaro las canciones pasando los parámetros que declaré en song.js
 
   var _songs = [
     new Song('R U Mine'.toUpperCase(), 'album1', '1998', 'songs/R_U_mine.mp3'),
     new Song(
-      'cancion1'.toUpperCase(),
+      'La Mordidita'.toUpperCase(),
       'album1',
       '1998',
       'songs/La_mordidita.mp3'
@@ -37,6 +65,7 @@ $(document).ready(function() {
   //1. Ejecuto la función toggleClass y le paso la clase active para que la ponga o la qui
   $('.turntable-container').click(function() {
     game.startGame();
+    $('.audioDemo').trigger('play');
   });
 
   //Evento para controlar el pulsado de tecla, le paso el parametro key
@@ -66,5 +95,8 @@ $(document).ready(function() {
   });
   $('#answer-error button').click(function() {
     game.resumeSong();
+  });
+  $('#winner button').click(function() {
+    game.reset();
   });
 });

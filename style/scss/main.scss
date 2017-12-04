@@ -83,6 +83,10 @@ body {
   right: 0;
   height: calc(100vh - 110px);
   margin: 50px 0;
+  .score {
+    color: grey;
+    font-size: 20px;
+  }
   .player {
     padding: 8px 0;
     box-shadow: 0 0 18px 4px rgba(0, 0, 0, 0.1);

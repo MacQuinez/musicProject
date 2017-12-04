@@ -16,36 +16,6 @@
 		"oAP": "\/.gitignore",
 		"oF": 0
 		},
-	"\/img\/armPart1.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/img\/armPart1.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/img\/armPart2.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/img\/armPart2.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/img\/armPart3.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/img\/armPart3.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
 	"\/img\/easy.png": {
 		"ft": 32768,
 		"iS": 4874,
@@ -72,6 +42,50 @@
 		"iS": 1618,
 		"oA": 0,
 		"oAP": "\/img\/favicon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/jugador19.png": {
+		"ft": 32768,
+		"iS": 5496,
+		"oA": 0,
+		"oAP": "\/img\/jugador19.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/jugador217.png": {
+		"ft": 32768,
+		"iS": 3829,
+		"oA": 0,
+		"oAP": "\/img\/jugador217.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/jugador316.png": {
+		"ft": 32768,
+		"iS": 3896,
+		"oA": 0,
+		"oAP": "\/img\/jugador316.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/img\/jugador427.png": {
+		"ft": 32768,
+		"iS": 3853,
+		"oA": 0,
+		"oAP": "\/img\/jugador427.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -130,17 +144,6 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/img\/rockola.png": {
-		"ft": 32768,
-		"iS": 185630,
-		"oA": 0,
-		"oAP": "\/img\/rockola.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},

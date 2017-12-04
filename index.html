@@ -14,6 +14,10 @@
 
 <body>
     <div class="wrapper">
+
+        <audio style="display: none" id="audioDemo" class="audioDemo" controls preload="none">
+            <source id="sourceSong" type="audio/mpeg">
+        </audio>
         <div class="turntable-elements">
             <div class="dificulty-container">
                 <p>
@@ -35,6 +39,7 @@
             </div>
         </div>
         <div class="players-container">
+
         </div>
         <div id="answer" class="answer-container" style="display: none">
             <div class="answer-elements">
@@ -60,7 +65,7 @@
             <div class="answer-elements answer-ok-elements">
                 <img src="img/playerone.png" alt="">
                 <p>Seems You Are Wrong</p>
-                <p class="response-error" style="color:red">-10</p>
+                <p class="response-error" style="color:red">-10 Points</p>
                 <p class="reponse-title"> </p>
                 <div class="title">
                     <button>TRY AGAIN</button>
