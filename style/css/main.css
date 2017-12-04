@@ -12,7 +12,6 @@ body {
 .turntable-elements {
   width: 80%;
   margin-left: 20%;
-  margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20,25 +19,20 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
-  .turntable-elements .dificulty-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-left: 10%; }
-    .turntable-elements .dificulty-container p {
-      width: 20%;
-      font-size: 35px; }
-    .turntable-elements .dificulty-container span {
-      color: lightgray;
-      font-weight: 300; }
-    .turntable-elements .dificulty-container .turntable-mini img {
-      margin-top: -20px;
-      width: 100px;
-      height: 100px;
-      -webkit-transform: rotate(45deg);
-              transform: rotate(45deg);
-      -webkit-transform-origin: bottom left;
-              transform-origin: bottom left; }
+  .turntable-elements .dificulty-container p {
+    font-size: 55px;
+    margin-left: 17%; }
+  .turntable-elements .dificulty-container span {
+    color: lightgray;
+    font-weight: 300; }
+  .turntable-elements .dificulty-container .turntable-mini img {
+    margin-top: -20px;
+    width: 100px;
+    height: 100px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transform-origin: bottom left;
+            transform-origin: bottom left; }
   .turntable-elements .turntable-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -182,22 +176,38 @@ body {
     .answer-container .answer-elements p {
       text-align: center;
       font-size: 46px;
-      color: grey; }
+      color: grey;
+      margin-bottom: 10px; }
+    .answer-container .answer-elements .answer-input {
+      width: 40%;
+      border: none;
+      height: 30px;
+      -webkit-box-shadow: 0 2px 40px lightgrey;
+              box-shadow: 0 2px 40px lightgrey;
+      margin-bottom: 30px;
+      outline: none;
+      font-size: 40px;
+      padding: 10px 5px 14px 5px;
+      color: #5c5c5c; }
     .answer-container .answer-elements .title {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-align: center;
           -ms-flex-align: center;
-              align-items: center;
-      margin-left: 2%; }
+              align-items: center; }
       .answer-container .answer-elements .title p {
         padding-right: 20px; }
       .answer-container .answer-elements .title button {
-        width: 100px;
+        width: 150px;
         height: 50px;
+        margin-top: 20px;
         border-radius: 200px;
         border: none;
+        color: #fff;
+        font-size: 20px;
+        outline: none;
+        cursor: pointer;
         background: #10acb4; }
 
 @keyframes rotate {

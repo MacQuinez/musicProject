@@ -33,6 +33,18 @@ function Game(players, songs, rounds) {
       'background',
       this.players[this.selectedPlayer].color
     );
+    $('#answer-error button').css(
+      'background',
+      this.players[this.selectedPlayer].color
+    );
+    $('#answer-ok button').css(
+      'background',
+      this.players[this.selectedPlayer].color
+    );
+    $('#winner button').css(
+      'background',
+      this.players[this.selectedPlayer].color
+    );
     $('#answer').show();
   };
   this.resumeSong = function() {
@@ -79,7 +91,7 @@ function Game(players, songs, rounds) {
   this.addRound = function() {
     if (this.currentRound <= this.finalRound) {
       this.currentRound += this.rounds;
-      $('.round-counter').text('Round ' + this.currentRound);
+      $('.round-counter').text('ROUND ' + this.currentRound);
     }
   };
   this.winner = function() {

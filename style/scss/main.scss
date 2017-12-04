@@ -12,15 +12,12 @@ body {
 .turntable-elements {
   width: 80%;
   margin-left: 20%;
-  margin-top: 30px;
   display: flex;
   flex-direction: column;
   .dificulty-container {
-    display: flex;
-    margin-left: 10%;
     p {
-      width: 20%;
-      font-size: 35px;
+      font-size: 55px;
+      margin-left: 17%;
     }
     span {
       color: lightgray;
@@ -167,19 +164,35 @@ body {
       text-align: center;
       font-size: 46px;
       color: grey;
+      margin-bottom: 10px;
+    }
+    .answer-input {
+      width: 40%;
+      border: none;
+      height: 30px;
+      box-shadow: 0 2px 40px lightgrey;
+      margin-bottom: 30px;
+      outline: none;
+      font-size: 40px;
+      padding: 10px 5px 14px 5px;
+      color: #5c5c5c;
     }
     .title {
       display: flex;
       align-items: center;
-      margin-left: 2%;
       p {
         padding-right: 20px;
       }
       button {
-        width: 100px;
+        width: 150px;
         height: 50px;
+        margin-top: 20px;
         border-radius: 200px;
         border: none;
+        color: #fff;
+        font-size: 20px;
+        outline: none;
+        cursor: pointer;
         background: #10acb4;
       }
     }
