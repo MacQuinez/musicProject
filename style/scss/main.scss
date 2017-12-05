@@ -10,8 +10,8 @@ body {
 }
 
 .turntable-elements {
-  width: 90%;
-  margin-left: 8%;
+  width: 80%;
+  margin-left: 10%;
   display: flex;
   flex-direction: column;
   .dificulty-container {
@@ -74,7 +74,6 @@ body {
 }
 
 .players-container {
-  width: 20%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -133,8 +132,7 @@ body {
     }
     &.active {
       opacity: 1;
-      opacity: 1;
-      right: 133px;
+      right: -10px;
       width: 400px;
     }
   }
@@ -147,13 +145,27 @@ body {
   width: 100vw;
   height: 100vh;
   background: rgba(255, 255, 255, 0.96);
-  display: flex;
-  flex-direction: column;
+  text-align: center;
+  .player {
+    color: #03a9f4;
+    width: 20%;
+    background: white;
+    box-shadow: 0 2px 4px lightgrey;
+    border-radius: 5px;
+    display: flex;
+    margin-top: 70px;
+    margin-left: 40%;
+    padding: 1em;
+    justify-content: space-around;
+    border-left: 9px solid;
+    height: 12vh;
+  }
   .answer-elements {
     margin-top: 10%;
     display: flex;
     align-items: center;
     flex-direction: column;
+    text-align: center;
     width: 100%;
     img {
       height: 23vh;

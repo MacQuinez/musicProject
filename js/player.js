@@ -26,6 +26,19 @@ function Player(id, playerName, avatar, keyCode, color, keyImage) {
         <img style="height: 50%;" src="${keyImage}" >
     </div>
   `);
+  this.printWinner = function() {
+    $('#winner').append(` 
+  <div class="player player-${id}" data-id="${id}" style="color: ${
+      this.color
+    };">
+        <img src="${avatar}" alt="">
+        <div class="data-player">
+            <p>${this.playerName}</p>
+            <p class="score">${this.playerPoints}</p>
+        </div>
+  </div>
+`);
+  };
   this.addPoints = function(num) {
     this.playerPoints += num;
 
@@ -43,5 +56,6 @@ function Player(id, playerName, avatar, keyCode, color, keyImage) {
       $('.player-' + this.id).removeClass('active');
     }
   };
+
   this.removePlayer = function() {};
 }

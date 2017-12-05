@@ -21,16 +21,20 @@ function Game(players, songs, rounds) {
   this.playSong = function() {
     $('#answer-ok').hide();
     $('.turntable-container').css('pointer-events', 'none');
-    this.selectSong();
-    audio.load();
-    audio.play();
-    this.winner();
-    this.addRound();
-    console.log(this.selectedSong.title);
-    this.status = 'play';
-    $('.turntable-container').toggleClass('active');
+    if (this.currentRound > this.finalRound) {
+      this.winner();
+    } else {
+      this.selectSong();
+      audio.load();
+      audio.play();
+      this.addRound();
+      console.log(this.selectedSong.title);
+      this.status = 'play';
+      $('.turntable-container').toggleClass('active');
+    }
   };
   this.pauseSong = function() {
+    this.status = 'pause';
     audio.pause();
     $('.turntable-container').removeClass('active');
     $('#answer img').attr('src', this.players[this.selectedPlayer].avatar);
@@ -56,6 +60,8 @@ function Game(players, songs, rounds) {
       'background',
       this.players[this.selectedPlayer].color
     );
+  };
+  this.showAnswerScreen = function() {
     $('#answer').show();
   };
   this.resumeSong = function() {
@@ -90,7 +96,7 @@ function Game(players, songs, rounds) {
         'background',
         this.players[this.selectedPlayer].color
       );
-      this.players[this.selectedPlayer].addPoints(-50);
+      this.players[this.selectedPlayer].addPoints(-10);
     }
   };
   this.selectSong = function() {
@@ -106,15 +112,27 @@ function Game(players, songs, rounds) {
     }
   };
   this.winner = function() {
-    if (this.currentRound > this.finalRound) {
-      $('#winner').show();
-      this.status = 'pause';
-      $('#winner img').attr('src', this.players[this.selectedPlayer].avatar);
+    this.pauseSong();
+    this.sortPlayer();
+    for (let i = 0; i < this.players.length; i++) {
+      this.players[i].printWinner();
     }
+    $('#winner').show();
   };
   this.reset = function() {
     if (this.currentRound === 5) {
       window.location.reload();
     }
+  };
+  this.sortPlayer = function() {
+    this.players.sort(function(a, b) {
+      if (a.playerPoints < b.playerPoints) {
+        return 1;
+      }
+      if (a.playerPoints > b.playerPoints) {
+        return -1;
+      }
+      return 0;
+    });
   };
 }

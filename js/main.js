@@ -72,10 +72,9 @@ $(document).ready(function() {
   //y le pido el keyCode
   $(document).keydown(function(key) {
     if (game.status === 'play') {
-      game.status = 'pause';
       for (let i = 0; i < game.players.length; i++) {
         if (
-          game.players[i].keyCode == key.keyCode &&
+          game.players[i].keyCode === key.keyCode &&
           game.players[i].playerStatus == 'enabled'
         ) {
           //Igualo selectedPlayer a 'i' para guardar su indice y así poder utilizarlo en todo el
@@ -83,6 +82,7 @@ $(document).ready(function() {
           //no podría utilizarla en otro sitio que no sea ese
           game.selectedPlayer = i;
           game.pauseSong();
+          game.showAnswerScreen();
         }
       }
     }
