@@ -48,6 +48,30 @@ $(document).ready(function() {
       'album1',
       '1998',
       'songs/La_mordidita.mp3'
+    ),
+    new Song(
+      'Brown Sugar'.toUpperCase(),
+      'album1',
+      '1998',
+      'songs/brown_sugar.mp3'
+    ),
+    new Song(
+      'Space Oddity'.toUpperCase(),
+      'album1',
+      '1998',
+      'songs/space_oddity.mp3'
+    ),
+    new Song(
+      'Jhonny be Goode'.toUpperCase(),
+      'album1',
+      '1998',
+      'songs/jhonny_goode.mp3'
+    ),
+    new Song(
+      'Starway to Heaven'.toUpperCase(),
+      'album1',
+      '1998',
+      'songs/starway_heaven.mp3'
     )
   ];
 
