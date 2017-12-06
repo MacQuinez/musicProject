@@ -224,6 +224,20 @@ body {
         cursor: pointer;
         background: #10acb4; }
 
+#winner .player {
+  margin-top: 55px; }
+
+#winner .title {
+  position: absolute;
+  bottom: 50%;
+  right: 10%; }
+  #winner .title button {
+    color: #fff;
+    padding: 1em;
+    font-size: 25px;
+    cursor: pointer;
+    outline: none; }
+
 @keyframes rotate {
   from {
     -webkit-transform: rotate(0deg);

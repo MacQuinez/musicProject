@@ -10,6 +10,7 @@ function Game(players, songs, rounds) {
   this.currentRound = 0;
   this.finalRound = 4;
   this.reset;
+  this.shuffleSongs;
 
   var audio = document.getElementById('audioDemo');
 
@@ -125,6 +126,11 @@ function Game(players, songs, rounds) {
   this.reset = function() {
     if (this.currentRound === 5) {
       window.location.reload();
+      this.shuffleSongs = function() {
+        this.songs.sort(function() {
+          return Math.random() - 0.5;
+        });
+      };
     }
   };
   this.sortPlayer = function() {

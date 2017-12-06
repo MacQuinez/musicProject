@@ -37,6 +37,13 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/img\/favicon.ico": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/img\/favicon.ico",
+		"oF": 0
+		},
 	"\/img\/favicon.png": {
 		"ft": 32768,
 		"iS": 1618,
@@ -50,7 +57,7 @@
 		},
 	"\/img\/jugador19.png": {
 		"ft": 32768,
-		"iS": 2957,
+		"iS": 9545,
 		"oA": 0,
 		"oAP": "\/img\/jugador19.png",
 		"oF": 0,
@@ -72,7 +79,7 @@
 		},
 	"\/img\/jugador316.png": {
 		"ft": 32768,
-		"iS": 3896,
+		"iS": 9794,
 		"oA": 0,
 		"oAP": "\/img\/jugador316.png",
 		"oF": 0,
@@ -116,7 +123,7 @@
 		},
 	"\/img\/playerthree.png": {
 		"ft": 32768,
-		"iS": 8258,
+		"iS": 3110,
 		"oA": 0,
 		"oAP": "\/img\/.playerthree~imageoptim.png",
 		"oF": 0,
@@ -303,6 +310,20 @@
 		"rFN": 0,
 		"uCM": 0
 		},
+	"\/songs\/brown_sugar.mp3": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/songs\/brown_sugar.mp3",
+		"oF": 0
+		},
+	"\/songs\/jhonny_goode.mp3": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/songs\/jhonny_goode.mp3",
+		"oF": 0
+		},
 	"\/songs\/La_mordidita.mp3": {
 		"cB": 0,
 		"ft": 8192,
@@ -315,6 +336,20 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/songs\/R_U_mine.mp3",
+		"oF": 0
+		},
+	"\/songs\/space_oddity.mp3": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/songs\/space_oddity.mp3",
+		"oF": 0
+		},
+	"\/songs\/starway_heaven.mp3": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/songs\/starway_heaven.mp3",
 		"oF": 0
 		},
 	"\/style\/css\/main.css": {

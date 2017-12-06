@@ -208,6 +208,24 @@ body {
     }
   }
 }
+#winner {
+  .player {
+    margin-top: 55px;
+  }
+
+  .title {
+    position: absolute;
+    bottom: 50%;
+    right: 10%;
+    button {
+      color: #fff;
+      padding: 1em;
+      font-size: 25px;
+      cursor: pointer;
+      outline: none;
+    }
+  }
+}
 
 @keyframes rotate {
   from {
