@@ -106,7 +106,6 @@ function Game(players, songs, rounds) {
     if (index > -1) {
       this.songs.splice(index, 1);
     }
-    console.log(this.songs);
   };
 
   this.addRound = function() {
