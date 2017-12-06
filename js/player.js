@@ -41,7 +41,6 @@ function Player(id, playerName, avatar, keyCode, color, keyImage) {
   };
   this.addPoints = function(num) {
     this.playerPoints += num;
-
     $('.player-' + this.id + ' .score').text(this.playerPoints);
   };
   //4. Defino la función para cambiar playerStatus y si esta enabled le añado la clase active

@@ -28,7 +28,6 @@ function Game(players, songs, rounds) {
       audio.load();
       audio.play();
       this.addRound();
-      console.log(this.selectedSong.title);
       this.status = 'play';
       $('.turntable-container').toggleClass('active');
     }
@@ -85,7 +84,6 @@ function Game(players, songs, rounds) {
       $('.reponse-title').text($('.answer-input').val());
       $('#answer').hide();
       $('#answer-ok').show();
-
       this.players[this.selectedPlayer].addPoints(50);
     } else {
       $('#answer-ok img').attr('src', this.players[this.selectedPlayer].avatar);
@@ -103,9 +101,14 @@ function Game(players, songs, rounds) {
     this.selectedSong = this.songs[
       Math.floor(Math.random() * this.songs.length)
     ];
-
     $('#sourceSong').attr('src', this.selectedSong.link);
+    var index = this.songs.indexOf(this.selectedSong);
+    if (index > -1) {
+      this.songs.splice(index, 1);
+    }
+    console.log(this.songs);
   };
+
   this.addRound = function() {
     if (this.currentRound <= this.finalRound) {
       this.currentRound += this.rounds;

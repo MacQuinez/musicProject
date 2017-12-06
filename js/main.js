@@ -42,14 +42,13 @@ $(document).ready(function() {
   //Declaro las canciones pasando los parámetros que declaré en song.js
 
   var _songs = [
-    new Song('R U Mine'.toUpperCase(), 'songs/R_U_mine.mp3'),
-    new Song('La Mordidita'.toUpperCase(), 'songs/La_mordidita.mp3'),
-    new Song('Brown Sugar'.toUpperCase(), 'songs/brown_sugar.mp3'),
-    new Song('Space Oddity'.toUpperCase(), 'songs/space_oddity.mp3'),
-    new Song('Jhonny be Goode'.toUpperCase(), 'songs/jhonny_goode.mp3'),
-    new Song('Starway to Heaven'.toUpperCase(), 'songs/starway_heaven.mp3')
+    new Song('R U Mine'.toUpperCase(), 'songs/R_U_mine.mp3', 0),
+    new Song('La Mordidita'.toUpperCase(), 'songs/La_mordidita.mp3', 1),
+    new Song('Brown Sugar'.toUpperCase(), 'songs/brown_sugar.mp3', 2),
+    new Song('Space Oddity'.toUpperCase(), 'songs/space_oddity.mp3', 3),
+    new Song('Jhonny be Goode'.toUpperCase(), 'songs/jhonny_goode.mp3', 4),
+    new Song('Starway to Heaven'.toUpperCase(), 'songs/starway_heaven.mp3', 5)
   ];
-
   //Instancio el juego ahora game es el juego.
   var game = new Game(_players, _songs, 1);
   // Dando click al elemento con la clase player hago lo siguiente:
