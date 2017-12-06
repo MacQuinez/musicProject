@@ -42,37 +42,12 @@ $(document).ready(function() {
   //Declaro las canciones pasando los parámetros que declaré en song.js
 
   var _songs = [
-    new Song('R U Mine'.toUpperCase(), 'album1', '1998', 'songs/R_U_mine.mp3'),
-    new Song(
-      'La Mordidita'.toUpperCase(),
-      'album1',
-      '1998',
-      'songs/La_mordidita.mp3'
-    ),
-    new Song(
-      'Brown Sugar'.toUpperCase(),
-      'album1',
-      '1998',
-      'songs/brown_sugar.mp3'
-    ),
-    new Song(
-      'Space Oddity'.toUpperCase(),
-      'album1',
-      '1998',
-      'songs/space_oddity.mp3'
-    ),
-    new Song(
-      'Jhonny be Goode'.toUpperCase(),
-      'album1',
-      '1998',
-      'songs/jhonny_goode.mp3'
-    ),
-    new Song(
-      'Starway to Heaven'.toUpperCase(),
-      'album1',
-      '1998',
-      'songs/starway_heaven.mp3'
-    )
+    new Song('R U Mine'.toUpperCase(), 'songs/R_U_mine.mp3'),
+    new Song('La Mordidita'.toUpperCase(), 'songs/La_mordidita.mp3'),
+    new Song('Brown Sugar'.toUpperCase(), 'songs/brown_sugar.mp3'),
+    new Song('Space Oddity'.toUpperCase(), 'songs/space_oddity.mp3'),
+    new Song('Jhonny be Goode'.toUpperCase(), 'songs/jhonny_goode.mp3'),
+    new Song('Starway to Heaven'.toUpperCase(), 'songs/starway_heaven.mp3')
   ];
 
   //Instancio el juego ahora game es el juego.

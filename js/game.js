@@ -103,6 +103,7 @@ function Game(players, songs, rounds) {
     this.selectedSong = this.songs[
       Math.floor(Math.random() * this.songs.length)
     ];
+
     $('#sourceSong').attr('src', this.selectedSong.link);
   };
   this.addRound = function() {

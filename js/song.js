@@ -1,6 +1,4 @@
-function Song(title, album, year, link) {
+function Song(title, link) {
   this.title = title;
-  this.album = album;
-  this.year = year;
   this.link = link;
 }
