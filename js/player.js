@@ -55,6 +55,4 @@ function Player(id, playerName, avatar, keyCode, color, keyImage) {
       $('.player-' + this.id).removeClass('active');
     }
   };
-
-  this.removePlayer = function() {};
 }

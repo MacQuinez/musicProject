@@ -11,6 +11,7 @@ function Game(players, songs, rounds) {
   this.finalRound = 4;
   this.reset;
   this.shuffleSongs;
+  this.letterClue;
 
   var audio = document.getElementById('audioDemo');
 
@@ -27,12 +28,16 @@ function Game(players, songs, rounds) {
     } else {
       this.selectSong();
       audio.load();
+      // TODO hacer que pare la música en un momento concreto y pasar a la sieguiente
+      // audio.currentTime = 30;
       audio.play();
       this.addRound();
       this.status = 'play';
       $('.turntable-container').toggleClass('active');
+      this.lettersClue();
     }
   };
+
   this.pauseSong = function() {
     this.status = 'pause';
     audio.pause();
@@ -109,6 +114,19 @@ function Game(players, songs, rounds) {
     }
   };
 
+  this.lettersClue = function() {
+    var clueText = this.selectedSong.title,
+      soFar = '';
+
+    var t = setInterval(function() {
+      (soFar += clueText.substr(0, 1)), (clueText = clueText.substr(1));
+
+      $('.visible').text(soFar);
+      $('.invisible').text(clueText);
+
+      if (clueText.length === 0) clearInterval(t);
+    }, 20000);
+  };
   this.addRound = function() {
     if (this.currentRound <= this.finalRound) {
       this.currentRound += this.rounds;

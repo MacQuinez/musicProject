@@ -47,7 +47,7 @@ $(document).ready(function() {
     new Song('Brown Sugar'.toUpperCase(), 'songs/brown_sugar.mp3', 2),
     new Song('Space Oddity'.toUpperCase(), 'songs/space_oddity.mp3', 3),
     new Song('Jhonny be Goode'.toUpperCase(), 'songs/jhonny_goode.mp3', 4),
-    new Song('Starway to Heaven'.toUpperCase(), 'songs/starway_heaven.mp3', 5)
+    new Song('Stairway to Heaven'.toUpperCase(), 'songs/starway_heaven.mp3', 5)
   ];
   //Instancio el juego ahora game es el juego.
   var game = new Game(_players, _songs, 1);
