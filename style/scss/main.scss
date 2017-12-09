@@ -15,9 +15,23 @@ body {
   display: flex;
   flex-direction: column;
   .dificulty-container {
-    p {
+    .round-counter {
       font-size: 55px;
       margin-left: 17%;
+      margin-bottom: -13px;
+    }
+    .clues {
+      display: flex;
+      align-items: center;
+      .title-clue {
+        font-size: 30px;
+        margin-left: 17%;
+      }
+      .visible {
+        color: black;
+        font-size: 30px;
+        margin-left: 20px;
+      }
     }
     span {
       color: lightgray;

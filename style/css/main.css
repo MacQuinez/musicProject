@@ -19,9 +19,24 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
-  .turntable-elements .dificulty-container p {
+  .turntable-elements .dificulty-container .round-counter {
     font-size: 55px;
-    margin-left: 17%; }
+    margin-left: 17%;
+    margin-bottom: -13px; }
+  .turntable-elements .dificulty-container .clues {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .turntable-elements .dificulty-container .clues .title-clue {
+      font-size: 30px;
+      margin-left: 17%; }
+    .turntable-elements .dificulty-container .clues .visible {
+      color: black;
+      font-size: 30px;
+      margin-left: 20px; }
   .turntable-elements .dificulty-container span {
     color: lightgray;
     font-weight: 300; }
