@@ -68,6 +68,7 @@ function Game(players, songs, rounds) {
   };
   this.showAnswerScreen = function() {
     $('#answer').show();
+    $('.answer-input[type="text"]').val('');
   };
   this.resumeSong = function() {
     $('#answer-error').hide();
@@ -127,6 +128,7 @@ function Game(players, songs, rounds) {
       if (clueText.length === 0) clearInterval(t);
     }, 20000);
   };
+
   this.addRound = function() {
     if (this.currentRound <= this.finalRound) {
       this.currentRound += this.rounds;
