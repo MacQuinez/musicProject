@@ -8,7 +8,7 @@ $(document).ready(function() {
   var _players = [
     new Player(
       0,
-      'Jugador 1',
+      'Player 1',
       'img/playerone.png',
       9,
       '#03a9f4',
@@ -16,7 +16,7 @@ $(document).ready(function() {
     ),
     new Player(
       1,
-      'Jugador 2',
+      'Player 2',
       'img/playertwo.png',
       8,
       '#8bc34a',
@@ -24,7 +24,7 @@ $(document).ready(function() {
     ),
     new Player(
       2,
-      'Jugador 3',
+      'Player 3',
       'img/playerthree.png',
       16,
       '#f44336',
@@ -32,7 +32,7 @@ $(document).ready(function() {
     ),
     new Player(
       3,
-      'Jugador 4',
+      'Player 4',
       'img/playerfour.png',
       27,
       '#ffc107',
