@@ -125,8 +125,11 @@ function Game(players, songs, rounds) {
       $('.visible').text(soFar);
       $('.invisible').text(clueText);
 
-      if (clueText.length === 0) clearInterval(t);
-    }, 20000);
+      if (clueText.length === 0) {
+        $('.visible').text('');
+        clearInterval(t);
+      }
+    }, 30000);
   };
 
   this.addRound = function() {
