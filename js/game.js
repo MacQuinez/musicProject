@@ -12,6 +12,7 @@ function Game(players, songs, rounds) {
   this.reset;
   this.shuffleSongs;
   this.letterClue;
+  this.clueTimer;
 
   var audio = document.getElementById('audioDemo');
 
@@ -92,6 +93,7 @@ function Game(players, songs, rounds) {
       $('#answer').hide();
       $('#answer-ok').show();
       this.players[this.selectedPlayer].addPoints(50);
+      clearInterval(this.clueTimer);
     } else {
       $('#answer-ok img').attr('src', this.players[this.selectedPlayer].avatar);
       $('.reponse-title').text($('.answer-input').val());
@@ -116,20 +118,19 @@ function Game(players, songs, rounds) {
   };
 
   this.lettersClue = function() {
-    var clueText = this.selectedSong.title,
-      soFar = '';
+    var clueText = this.selectedSong.title;
+    var soFar = '';
 
-    var t = setInterval(function() {
-      (soFar += clueText.substr(0, 1)), (clueText = clueText.substr(1));
+    this.clueTimer = setInterval(function() {
+      soFar += clueText.substr(0, 1);
+      clueText = clueText.substr(1);
 
       $('.visible').text(soFar);
-      $('.invisible').text(clueText);
 
       if (clueText.length === 0) {
-        $('.visible').text('');
-        clearInterval(t);
+        clearInterval(this.clueTimer);
       }
-    }, 30000);
+    }, 5000);
   };
 
   this.addRound = function() {
