@@ -35,7 +35,7 @@ $(document).ready(function() {
   ];
   var _songs = [
     new Song('Little Green Bag'.toUpperCase(), 'songs/bag.mp3', 0),
-    new Song('Do I Wanna Do'.toUpperCase(), 'songs/do_wanna.mp3', 1),
+    new Song('Do I Wanna Know'.toUpperCase(), 'songs/do_wanna.mp3', 1),
     new Song('Brown Sugar'.toUpperCase(), 'songs/brown_sugar.mp3', 2),
     new Song('Space Oddity'.toUpperCase(), 'songs/space_oddity.mp3', 3),
     new Song('Jhonny be Goode'.toUpperCase(), 'songs/jhonny_goode.mp3', 4),
