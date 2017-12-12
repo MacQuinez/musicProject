@@ -34,12 +34,18 @@ $(document).ready(function() {
     )
   ];
   var _songs = [
-    new Song('R U Mine'.toUpperCase(), 'songs/R_U_mine.mp3', 0),
-    new Song('La Mordidita'.toUpperCase(), 'songs/La_mordidita.mp3', 1),
+    new Song('Little Green Bag'.toUpperCase(), 'songs/bag.mp3', 0),
+    new Song('Do I Wanna Do'.toUpperCase(), 'songs/do_wanna.mp3', 1),
     new Song('Brown Sugar'.toUpperCase(), 'songs/brown_sugar.mp3', 2),
     new Song('Space Oddity'.toUpperCase(), 'songs/space_oddity.mp3', 3),
     new Song('Jhonny be Goode'.toUpperCase(), 'songs/jhonny_goode.mp3', 4),
-    new Song('Stairway to Heaven'.toUpperCase(), 'songs/starway_heaven.mp3', 5)
+    new Song('Penny Lane'.toUpperCase(), 'songs/penny_lane.mp3', 5),
+    new Song('Valery'.toUpperCase(), 'songs/valery.mp3', 6),
+    new Song(
+      'Sweet Child O Mine'.toUpperCase(),
+      'songs/sweet_child_o_mine.mp3',
+      7
+    )
   ];
 
   var game = new Game(_players, _songs, 1);

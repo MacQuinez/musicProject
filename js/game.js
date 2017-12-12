@@ -124,7 +124,7 @@ function Game(players, songs, rounds) {
       if (clueText.length === 0) {
         clearInterval(this.clueTimer);
       }
-    }, 10000);
+    }, 20000);
   };
 
   this.addRound = function() {
