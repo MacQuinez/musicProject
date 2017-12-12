@@ -217,7 +217,8 @@ body {
       outline: none;
       font-size: 40px;
       padding: 10px 5px 14px 5px;
-      color: #5c5c5c; }
+      color: #5c5c5c;
+      text-align: center; }
     .answer-container .answer-elements .title {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -251,7 +252,8 @@ body {
     padding: 1em;
     font-size: 25px;
     cursor: pointer;
-    outline: none; }
+    outline: none;
+    border-radius: 5px; }
 
 @keyframes rotate {
   from {

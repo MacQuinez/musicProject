@@ -17,8 +17,6 @@ function Game(players, songs, rounds) {
   var audio = document.getElementById('audioDemo');
 
   this.startGame = function() {
-    // Dando click al elemento con la clase turntable-container hago lo siguiente:
-    //1. Ejecuto la función toggleClass y le paso la clase active para que la ponga o la qui
     this.playSong();
   };
   this.playSong = function() {
@@ -29,7 +27,7 @@ function Game(players, songs, rounds) {
     } else {
       this.selectSong();
       audio.load();
-      // TODO hacer que pare la música en un momento concreto y pasar a la sieguiente
+      // TODO hacer que pare la música en un momento concreto y pasar a la siguiente
       // audio.currentTime = 30;
       audio.play();
       this.addRound();
@@ -84,10 +82,6 @@ function Game(players, songs, rounds) {
         .toUpperCase() === this.selectedSong.title
     ) {
       $('#answer-ok img').attr('src', this.players[this.selectedPlayer].avatar);
-      $('#answer-ok button').css(
-        'background',
-        this.players[this.selectedPlayer].color
-      );
       $('.response-ok').css('color', this.players[this.selectedPlayer].color);
       $('.reponse-title').text($('.answer-input').val());
       $('#answer').hide();

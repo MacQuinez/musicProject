@@ -200,6 +200,7 @@ body {
       font-size: 40px;
       padding: 10px 5px 14px 5px;
       color: #5c5c5c;
+      text-align: center;
     }
     .title {
       display: flex;
@@ -237,6 +238,7 @@ body {
       font-size: 25px;
       cursor: pointer;
       outline: none;
+      border-radius: 5px;
     }
   }
 }

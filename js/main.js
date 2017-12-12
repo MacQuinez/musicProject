@@ -1,10 +1,4 @@
-//Para que se ejecute el código cuando el documento esté cargado
-// con esto me aseguro que todo está listo para funcionar
-//Aqui van todos los eventos
-
 $(document).ready(function() {
-  //Declaro los jugadores pasando los parámetros que declaré en players.js
-
   var _players = [
     new Player(
       0,
@@ -39,8 +33,6 @@ $(document).ready(function() {
       'img/jugador427.png'
     )
   ];
-  //Declaro las canciones pasando los parámetros que declaré en song.js
-
   var _songs = [
     new Song('R U Mine'.toUpperCase(), 'songs/R_U_mine.mp3', 0),
     new Song('La Mordidita'.toUpperCase(), 'songs/La_mordidita.mp3', 1),
@@ -49,25 +41,18 @@ $(document).ready(function() {
     new Song('Jhonny be Goode'.toUpperCase(), 'songs/jhonny_goode.mp3', 4),
     new Song('Stairway to Heaven'.toUpperCase(), 'songs/starway_heaven.mp3', 5)
   ];
-  //Instancio el juego ahora game es el juego.
+
   var game = new Game(_players, _songs, 1);
-  // Dando click al elemento con la clase player hago lo siguiente:
-  // 1. Asigno a una variable el valor de su atributo data-id.
-  //2.  Le paso esa variable al atributo players de la clase Game
-  // definida en game.js y llamo a la función toggleStatus definida en main.js
+
   $('.player').click(function() {
     var playerId = $(this).attr('data-id');
     game.players[playerId].toggleStatus();
   });
-  // Dando click al elemento con la clase turntable-container hago lo siguiente:
-  //1. Ejecuto la función toggleClass y le paso la clase active para que la ponga o la qui
+
   $('.turntable-container').click(function() {
     game.startGame();
     $('.audioDemo').trigger('play');
   });
-
-  //Evento para controlar el pulsado de tecla, le paso el parametro key
-  //y le pido el keyCode
   $(document).keydown(function(key) {
     if (game.status === 'play') {
       for (let i = 0; i < game.players.length; i++) {
