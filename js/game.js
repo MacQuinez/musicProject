@@ -130,7 +130,7 @@ function Game(players, songs, rounds) {
       if (clueText.length === 0) {
         clearInterval(this.clueTimer);
       }
-    }, 5000);
+    }, 10000);
   };
 
   this.addRound = function() {
